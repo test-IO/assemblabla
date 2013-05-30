@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
+    "assemblabla.gemspec",
     "lib/assemblabla.rb",
     "lib/resources/base.rb",
     "lib/resources/custom_fields.rb",
