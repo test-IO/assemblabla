@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "assembla"
+  s.name = "assemblabla"
   s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -13,7 +13,6 @@ Gem::Specification.new do |s|
   s.description = "(Threadsafe) Ruby Client for the Assembla REST API"
   s.email = "jan@general-scripting.com"
   s.extra_rdoc_files = [
-    "LICENSE.txt",
     "README.md"
   ]
   s.files = [
@@ -21,12 +20,10 @@ Gem::Specification.new do |s|
     ".rspec",
     "Gemfile",
     "Gemfile.lock",
-    "LICENSE.txt",
     "README.md",
     "Rakefile",
     "VERSION",
-    "assembla.gemspec",
-    "lib/assembla.rb",
+    "lib/assemblabla.rb",
     "lib/resources/base.rb",
     "lib/resources/custom_fields.rb",
     "lib/resources/space.rb",
@@ -34,7 +31,7 @@ Gem::Specification.new do |s|
     "spec/assembla_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = "http://github.com/GeneralScripting/assembla"
+  s.homepage = "http://github.com/GeneralScripting/assemblabla"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.25"

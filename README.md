@@ -1,16 +1,16 @@
-# assembla
+# assemblabla
 
 ## Installation
 
-    gem install assembla
+    gem install assemblabla
 
 Or in your Gemfile:
 
-    gem 'assembla'
+    gem 'assemblabla'
 
 ## Usage
 
-    require 'assembla'
+    require 'assemblabla'
     
     client = Assembla::Client.new(YOUR_KEY, YOUR_SECRET)
     

@@ -14,8 +14,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "assembla"
-  gem.homepage = "http://github.com/GeneralScripting/assembla"
+  gem.name = "assemblabla"
+  gem.homepage = "http://github.com/GeneralScripting/assemblabla"
   gem.license = "MIT"
   gem.summary = "(Threadsafe) Ruby Client for the Assembla REST API"
   gem.description = "(Threadsafe) Ruby Client for the Assembla REST API"
@@ -43,7 +43,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "assembla #{version}"
+  rdoc.title = "assemblabla #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
