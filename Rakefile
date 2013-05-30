@@ -17,10 +17,10 @@ Jeweler::Tasks.new do |gem|
   gem.name = "assembla"
   gem.homepage = "http://github.com/GeneralScripting/assembla"
   gem.license = "MIT"
-  gem.summary = "summary"
-  gem.description = "description"
+  gem.summary = "(Threadsafe) Ruby Client for the Assembla REST API"
+  gem.description = "(Threadsafe) Ruby Client for the Assembla REST API"
   gem.email = "jan@general-scripting.com"
-  gem.authors = ["Jan Schwenzien"]
+  gem.authors = ["Jan Schwenzien", "Heiner Sameisky"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new

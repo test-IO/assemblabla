@@ -1,8 +1,34 @@
-= assembla
+# assembla
 
-Description goes here.
+## Installation
 
-== Contributing to assembla
+    gem install assembla
+
+Or in your Gemfile:
+
+    gem 'assembla'
+
+## Usage
+
+    require 'assembla'
+    
+    client = Assembla::Client.new(YOUR_KEY, YOUR_SECRET)
+    
+    client.spaces
+    # returns the ActiveResource: Space
+    # see https://github.com/rails/activeresource#configuration-and-usage
+    
+    # find(:first) is broken :(
+    space_id = client.spaces.find(:all).first.id
+    
+    client.tickets( space_id )
+    # returns the ActiveResource: Ticket
+    # (ugly, but necessary until ActiveResource supports has_many etc.)
+    
+That is all for now. Please help creating the other [Assembla API methods](http://api-doc.assembla.com/content/api_reference.html).
+
+
+## Contributing to assembla
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
@@ -12,8 +38,7 @@ Description goes here.
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-== Copyright
+## License
 
-Copyright (c) 2013 Jan Schwenzien. See LICENSE.txt for
-further details.
+This gem is released under the [MIT License](http://www.opensource.org/licenses/MIT).
 

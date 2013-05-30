@@ -3,6 +3,7 @@ source "http://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
+gem 'json', '~> 1.7.7'
 gem 'activeresource', require: 'active_resource'
 
 # Add dependencies to develop your gem here.
