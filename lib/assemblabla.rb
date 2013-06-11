@@ -1,8 +1,8 @@
 require 'active_resource'
-require 'resources/base'
-require 'resources/space'
-require 'resources/ticket'
-require 'resources/custom_fields'
+require 'assemblabla/base'
+require 'assemblabla/space'
+require 'assemblabla/ticket'
+require 'assemblabla/custom_fields'
 
 module Assembla
   class Client
