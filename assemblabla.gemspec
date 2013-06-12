@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "assemblabla"
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jan Schwenzien", "Heiner Sameisky"]
-  s.date = "2013-06-11"
+  s.date = "2013-06-12"
   s.description = "(Threadsafe) Ruby Client for the Assembla REST API"
   s.email = "jan@general-scripting.com"
   s.extra_rdoc_files = [
@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     ".rspec",
+    ".ruby-gemset",
+    ".ruby-version",
     "Gemfile",
     "Gemfile.lock",
     "README.md",
@@ -27,6 +29,7 @@ Gem::Specification.new do |s|
     "lib/assemblabla.rb",
     "lib/assemblabla/base.rb",
     "lib/assemblabla/custom_fields.rb",
+    "lib/assemblabla/milestone.rb",
     "lib/assemblabla/space.rb",
     "lib/assemblabla/ticket.rb",
     "spec/assembla_spec.rb",
