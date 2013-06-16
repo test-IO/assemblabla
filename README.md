@@ -1,5 +1,8 @@
 # assemblabla
 
+[![Gem Version](https://badge.fury.io/rb/assemblabla.png)](http://badge.fury.io/rb/assemblabla)
+[![Code Climate](https://codeclimate.com/github/GeneralScripting/assemblabla.png)](https://codeclimate.com/github/GeneralScripting/assemblabla)
+
 ## Installation
 
     gem install assemblabla
