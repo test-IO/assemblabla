@@ -28,6 +28,9 @@ Or in your Gemfile:
     # returns the ActiveResource: Ticket
     # (ugly, but necessary until ActiveResource supports has_many etc.)
     
+    client.milestones( space_id )
+    # returns the ActiveResource: Milestone
+    
 That is all for now. Please help creating the other [Assembla API methods](http://api-doc.assembla.com/content/api_reference.html).
 
 
