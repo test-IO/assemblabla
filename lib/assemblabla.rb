@@ -24,6 +24,7 @@ module Assembla
         def self.name; superclass.name; end
         c.element_name            = name.to_s
         c.site                    = "#{BASE_URL}#{options[:prefix]}"
+        c.headers['Content-type'] = 'application/json'
         c.headers['X-Api-Key']    = the_key
         c.headers['X-Api-Secret'] = the_secret
       end
