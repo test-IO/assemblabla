@@ -42,5 +42,9 @@ module Assembla
       resource(:milestone, prefix: "spaces/#{space_id}/")
     end
 
+    def users(space_id)
+      resource(:user, prefix: "spaces/#{space_id}/")
+    end
+
   end
 end
