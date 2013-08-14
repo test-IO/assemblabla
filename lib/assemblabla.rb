@@ -4,6 +4,7 @@ require 'assemblabla/space'
 require 'assemblabla/ticket'
 require 'assemblabla/custom_fields'
 require 'assemblabla/milestone'
+require 'assemblabla/user'
 
 module Assembla
   class Client
