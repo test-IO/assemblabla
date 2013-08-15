@@ -1,9 +1,8 @@
 module Assembla
   class Ticket < Assembla::Base
 
-
-  	def self.by_milestone(space_id, milestone_id)
-  		self.find(:all, :from => "spaces/#{space_id}/tickets/milestone/#{milestone_id}")
+  	def url
+  		"https://www.assembla.com/spaces/#{self.space_id}/tickets/cardwall#/ticket:#{self.number}"
   	end
   end
 end
