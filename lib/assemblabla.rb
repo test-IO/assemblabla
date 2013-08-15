@@ -5,6 +5,7 @@ require 'assemblabla/ticket'
 require 'assemblabla/custom_fields'
 require 'assemblabla/milestone'
 require 'assemblabla/user'
+require 'assemblabla/ticket_component'
 
 module Assembla
   class Client
@@ -45,6 +46,10 @@ module Assembla
 
     def users(space_id)
       resource(:user, prefix: "spaces/#{space_id}/")
+    end
+
+    def ticket_components(space_id)
+      resource(:ticket_component, prefix: "spaces/#{space_id}/")
     end
 
   end
