@@ -51,6 +51,5 @@ module Assembla
     def ticket_components(space_id)
       resource(:ticket_component, prefix: "spaces/#{space_id}/")
     end
-
   end
 end
