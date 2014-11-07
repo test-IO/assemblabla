@@ -4,6 +4,8 @@ require 'assemblabla/space'
 require 'assemblabla/ticket'
 require 'assemblabla/custom_fields'
 require 'assemblabla/milestone'
+require 'assemblabla/user'
+require 'assemblabla/ticket_component'
 
 module Assembla
   class Client
@@ -24,6 +26,7 @@ module Assembla
         def self.name; superclass.name; end
         c.element_name            = name.to_s
         c.site                    = "#{BASE_URL}#{options[:prefix]}"
+        c.headers['Content-type'] = 'application/json'
         c.headers['X-Api-Key']    = the_key
         c.headers['X-Api-Secret'] = the_secret
       end
@@ -41,5 +44,12 @@ module Assembla
       resource(:milestone, prefix: "spaces/#{space_id}/")
     end
 
+    def users(space_id)
+      resource(:user, prefix: "spaces/#{space_id}/")
+    end
+
+    def ticket_components(space_id)
+      resource(:ticket_component, prefix: "spaces/#{space_id}/")
+    end
   end
 end
